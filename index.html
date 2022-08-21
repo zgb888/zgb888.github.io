@@ -1,6 +1,25 @@
 
 <!DOCTYPE html>
 <html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta charset=utf-8" />
+<title>白屏请刷新</title>
+</head>
+<body>
+<script>
+　　var t=5;//设定跳转的时间
+　　setInterval("refer()",1000); //启动1秒定时
+　　function refer(){
+　　　　if(t==0){
+　　　　　　location="https://c1a431.github.io"; //#设定跳转的链接地址
+　　　　}
+　　　　document.getElementById('show').innerHTML=""+t+""; // 显示倒计时
+　　　　t--; // 计数器递减
+　　　　}
+</script>
+<span id="show"></span>
+</body>
+	       
 <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
 <script>
   new LingQue.Monitor().init({id:"Jm2HUoXYApiEhX34"});
